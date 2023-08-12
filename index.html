@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website Projects To-Do List</title>
+</head>
+<body>
+    <div class="container">
+    <h1>To-Do List</h1>
+    <div class="gif-container">
+        <img src="https://i.gifer.com/OnFv.gif" alt="Cool GIF">
+    </div>
+    
+    <div class="task-form">
+    <input type="text" id="task" placeholder="Enter task...">
+    <input type="date" id="deadline" placeholder="Select deadline...">
+    <select id="priority">
+        <option value="high">High Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="low">Low Priority</option>
+    </select>
+    <input type="text" id="labels" placeholder="Enter labels...">
+    <button id="addTask">Add Task</button>
+    </div>
+    <div id="taskList"></div>
+    <div class="progress-container">
+    <p>Tasks completed: <span id="completedCount">0</span></p>
+    <p>Tasks remaining: <span id="remainingCount">0</span></p>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
